@@ -1,0 +1,251 @@
+* {
+    padding:0;
+    margin:0;
+    list-style:none;
+    box-sizing: border-box;
+    border:0;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    margin-left: 140px;
+
+}
+
+@media (max-width: 989px) {
+    header{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 0;
+    }
+}
+
+h2{
+    display: flex inline;
+    justify-content: flex-start;
+    align-items: center;
+    width: 15vw;
+    font-size: 36px;
+
+}
+
+h2 a{
+     color: black;
+     text-decoration: none;
+     font-size: 30px;
+
+}
+
+.menu-header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1180px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 39vw;
+    font-size: 20px;
+    font-weight: bold 45px;
+}
+
+li{
+    color: #848484; 
+    width: 6vw;
+    transition: 0.3;
+}
+
+li a{
+    color: #848484;
+    text-decoration: none;
+}
+
+.model-li{
+width: 10vw;
+}
+
+.model-li a{
+    display: flex;
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.basic-li :hover{
+    font-size: 20px
+}
+
+li :hover{
+    font-size: 20px;
+    transition: 0.4s;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.title-2{
+    height: 70vh;
+    background-image: url(assets/images/laranja\ azul\ recorte.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+h1{
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 64vw;
+    height: 48vh;
+    font-size: 50px;
+    padding-top: 35vh;
+    
+}
+
+.main-paragraph{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 19.5vw;
+    height: 22vh;
+
+}
+
+.main-link{
+    display: flex;
+    justify-content: flex-end;
+    width: 23vw;
+    height: 22vh;
+}
+
+@media(min-width:990px) {
+    .main-link {
+      padding-top: 28px;
+      font-size: 22px;
+    }
+    .main-link:hover {
+      text-decoration: underline;
+      font-size: 24px;
+    }
+  }
+
+.main-paragraph a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 45px;
+    margin-left: 12px;
+    
+}
+
+@media(min-width:1025px) {
+    main .gallery{
+      margin: 80px 0;
+    }
+  }
+
+figure{
+    margin: 10px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width:990px) and (max-width: 1025px) {
+    main .gallery{
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+
+figure img{
+    height: 40vh;
+    width: 80%vw;
+    transition: .9s ease-in-out;
+}
+
+@media(min-width:990px) and (max-width: 1024px) {
+  main .gallery img{
+    width: 200px;
+    height: 200px;
+    margin: 15px 0px;
+  }
+}
+
+main .gallery img:hover {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1.1);
+}
+main .gallery img:active {
+  transform: scale(1, 1);
+  -webkit-transform: scale(1.1);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 1vh;
+    margin-left: 25px;
+    padding-top: 10px;
+    
+}
+
+.social-media ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 21vw;
+    margin: 80px;
+    padding-top: 40px;
+    
+}
+
+footer .social-media i img{
+    height: 30px;
+
+}
+
+h3{
+    width: 30vw;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+p{
+    width: 500vw;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+/*
+não consegui terminar todo o responsivo do site, apesar de ter conseguido, hoje durante a demanda do desafio, ter estudado mais sobre e aplicar aqui. Meu maior impecilio foi o tempo(covid, reforma e pc de contratempos) na construção desse código, mas me supreendi bastante com o meu rendimento o contruindo pois, definitivamente, sei mais do que achei que sabia.*/
